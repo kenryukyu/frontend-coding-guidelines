@@ -154,7 +154,7 @@ article {
   @include white-card();
   header {
     h3 {
-      @include big-blue-title() l;
+      @include big-blue-title();
     }
     time {
       @include small-grey-text();
