@@ -8,23 +8,21 @@ Coding HTML, CSS, JS the way it was meant to be!
 
 #### Grouping data and content
 
-```
+```html
 <!--Sections of related content-->
 <section>
-    <header>
-    </header>
-    <!-- section content -->
+  <header></header>
+  <!-- section content -->
 </section>
 <!--Stand alone article-->
 <article>
-    <header>
-    </header>
-    <!-- article content -->
+  <header></header>
+  <!-- article content -->
 </article>
 <!-- Images with related content below (card) -->
 <figure>
-    <!-- image -->
-    <figcaption></figcaption>
+  <!-- image -->
+  <figcaption></figcaption>
 </figure>
 <!-- Last resort groupings: -->
 <div></div>
@@ -32,16 +30,46 @@ Coding HTML, CSS, JS the way it was meant to be!
 
 #### Tagging data
 
-```
-- Titles: <h1>, <h2>, <h3>….
-- Basic Text Body Content: <p>
-- Time and dates: <time>
-- List of data: <ul>, <ol>, <li>
-- Definition list: <dl>, <dt>, <dd>
-- Emphasize inline text: <em>
-- Table of data: <table>
-- Images: <img>
-- Last resort: <span>
+```html
+- Titles:
+<h1>
+  ,
+  <h2>
+    ,
+    <h3>
+      …. - Basic Text Body Content:
+      <p>
+        - Time and dates:
+        <time>
+          - List of data:
+          <ul>
+            ,
+            <ol>
+              ,
+              <li>
+                - Definition list:
+                <dl>
+                  ,
+                  <dt>,</dt>
+                  <dd>
+                    - Emphasize inline text:
+                    <em>
+                      - Table of data:
+                      <table>
+                        - Images:
+                        <img />
+                        - Last resort:
+                        <span></span></table
+                    ></em>
+                  </dd>
+                </dl>
+              </li>
+            </ol></ul
+        ></time>
+      </p>
+    </h3>
+  </h2>
+</h1>
 ```
 
 ### 2. Add id’s, do not add classes yet to add more detailed meaning to the content
@@ -50,31 +78,34 @@ Coding HTML, CSS, JS the way it was meant to be!
 
 #### Example HTML
 
-```
+```html
 <article>
-    <header>
-        <h3>My Article 1</h3>
-        <time>1/2/2019</time>
-    </header>
-    <p id="basic_information">
-        This is my article it is great.
-    </p>
-    <p id="very_important_information">
-        This is another paragraph. It is important.
-    </p>
+  <header>
+    <h3>My Article 1</h3>
+    <time>1/2/2019</time>
+  </header>
+  <p id="basic_information">
+    This is my article it is great.
+  </p>
+  <p id="very_important_information">
+    This is another paragraph. It is important.
+  </p>
 </article>
 ```
 
 #### Example CSS Skeleton
 
-```
+```scss
 article {
-    header {
-        h3 {}
-        time {}
+  header {
+    h3 {
     }
+    time {
+    }
+  }
 
-    p {}
+  p {
+  }
 }
 ```
 
@@ -96,15 +127,23 @@ Do not think about how the design looks at this phase. Also do not design HTML o
 
 #### Example mixin with descriptive visual names:
 
-```
-@mixin big-blue-title() {}
-@mixin medium-red-title() {}
-@mixin small-black-title() {}
-@mixin small-grey-text() {}
-@mixin grey-bg-row-box() {}
-@mixin white-card() {}
-@mixin netflix-style-slider() {}
-@mixin basic-black-text(font-size) {}
+```scss
+@mixin big-blue-title() {
+}
+@mixin medium-red-title() {
+}
+@mixin small-black-title() {
+}
+@mixin small-grey-text() {
+}
+@mixin grey-bg-row-box() {
+}
+@mixin white-card() {
+}
+@mixin netflix-style-slider() {
+}
+@mixin basic-black-text(font-size) {
+}
 ```
 
 ### 2. Create a “sampler” HTML page with each mixin example.
@@ -119,47 +158,47 @@ Do not be semantic with mixin names. e.g. @mixin main-title(), @mixin datetime()
 
 #### Example CSS
 
-```
+```scss
 article {
-    @include white-card();
-    header {
-        h3 {
-            @include big-blue-title()l
-        }
-        time {
-            @include small-grey-text();
-        }
+  @include white-card();
+  header {
+    h3 {
+      @include big-blue-title() l;
     }
+    time {
+      @include small-grey-text();
+    }
+  }
 
-    p {
-        @include basic-black-text(12);
-    }
+  p {
+    @include basic-black-text(12);
+  }
 }
 ```
 
 2. Add more CSS such as paddings, margins, floats, flex, absolutes, etc. to achieve the layout (CSS Developer)
 3. Using id selectors defined in HTML, override specific sections for specific styling (CSS Developer)
 
-```
+```scss
 article {
-    @include white-card();
-    header {
-        h3 {
-            @include big-blue-title()l
-        }
-        time {
-            @include small-grey-text();
-        }
+  @include white-card();
+  header {
+    h3 {
+      @include big-blue-title() l;
     }
-
-    p {
-        @include basic-black-text(12);
-
-        &#very_imporant_data {
-            font-weight: bold;
-            color: red;
-        }
+    time {
+      @include small-grey-text();
     }
+  }
+
+  p {
+    @include basic-black-text(12);
+
+    &#very_imporant_data {
+      font-weight: bold;
+      color: red;
+    }
+  }
 }
 ```
 
