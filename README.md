@@ -54,12 +54,13 @@ Coding HTML, CSS, JS the way it was meant to be!
 <article>
     <header>
         <h3>My Article 1</h3>
+        <time>1/2/2019</time>
     </header>
-    <p>
+    <p id="basic_information">
         This is my article it is great.
     </p>
-    <p>
-        This is another paragraph.
+    <p id="very_important_information">
+        This is another paragraph. It is important.
     </p>
 </article>
 ```
@@ -70,6 +71,7 @@ Coding HTML, CSS, JS the way it was meant to be!
 article {
     header {
         h3 {}
+        time {}
     }
 
     p {}
@@ -102,6 +104,7 @@ Do not think about how the design looks at this phase. Also do not design HTML o
 @mixin grey-bg-row-box() {}
 @mixin white-card() {}
 @mixin netflix-style-slider() {}
+@mixin basic-black-text(font-size) {}
 ```
 
 ### 2. Create a “sampler” HTML page with each mixin example.
@@ -113,8 +116,53 @@ Do not be semantic with mixin names. e.g. @mixin main-title(), @mixin datetime()
 ## Phase 2: Style the Design using Mixins and Specific Override CSS (HTML Developer & CSS Developer)
 
 1. Inside CSS skeleton, apply mixins (HTML Developer or CSS Developer)
+
+#### Example CSS
+
+```
+article {
+    @include white-card();
+    header {
+        h3 {
+            @include big-blue-title()l
+        }
+        time {
+            @include small-grey-text();
+        }
+    }
+
+    p {
+        @include basic-black-text(12);
+    }
+}
+```
+
 2. Add more CSS such as paddings, margins, floats, flex, absolutes, etc. to achieve the layout (CSS Developer)
 3. Using id selectors defined in HTML, override specific sections for specific styling (CSS Developer)
+
+```
+article {
+    @include white-card();
+    header {
+        h3 {
+            @include big-blue-title()l
+        }
+        time {
+            @include small-grey-text();
+        }
+    }
+
+    p {
+        @include basic-black-text(12);
+
+        &#very_imporant_data {
+            font-weight: bold;
+            color: red;
+        }
+    }
+}
+```
+
 4. If more HTML tags are needed for styling or layout, ask HTML developer to add more semantic tags (HTML Developer)
 
 ## Phase 3: Refactor
