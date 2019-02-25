@@ -30,46 +30,16 @@ Coding HTML, CSS, JS the way it was meant to be!
 
 #### Tagging data
 
-```html
-- Titles:
-<h1>
-  ,
-  <h2>
-    ,
-    <h3>
-      …. - Basic Text Body Content:
-      <p>
-        - Time and dates:
-        <time>
-          - List of data:
-          <ul>
-            ,
-            <ol>
-              ,
-              <li>
-                - Definition list:
-                <dl>
-                  ,
-                  <dt>,</dt>
-                  <dd>
-                    - Emphasize inline text:
-                    <em>
-                      - Table of data:
-                      <table>
-                        - Images:
-                        <img />
-                        - Last resort:
-                        <span></span></table
-                    ></em>
-                  </dd>
-                </dl>
-              </li>
-            </ol></ul
-        ></time>
-      </p>
-    </h3>
-  </h2>
-</h1>
+```
+- Titles: <h1>, <h2>, <h3>….
+- Basic Text Body Content: <p>
+- Time and dates: <time>
+- List of data: <ul>, <ol>, <li>
+- Definition list: <dl>, <dt>, <dd>
+- Emphasize inline text: <em>
+- Table of data: <table>
+- Images: <img>
+- Last resort: <span>
 ```
 
 ### 2. Add id’s, do not add classes yet to add more detailed meaning to the content
