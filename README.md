@@ -8,23 +8,36 @@ Coding HTML, CSS, JS the way it was meant to be!
 
 #### Grouping data and content
 
+**Sections of related content**
+
 ```html
-<!--Sections of related content-->
 <section>
   <header></header>
   <!-- section content -->
 </section>
-<!--Stand alone article-->
+```
+
+**Stand alone article**
+
+```html
 <article>
   <header></header>
   <!-- article content -->
 </article>
-<!-- Images with related content below (card) -->
+```
+
+**Images with related content below (card)**
+
+```html
 <figure>
   <!-- image -->
   <figcaption></figcaption>
 </figure>
-<!-- Last resort groupings: -->
+```
+
+**Last resort groupings**
+
+```html
 <div></div>
 ```
 
