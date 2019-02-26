@@ -2,6 +2,8 @@
 
 Coding HTML, CSS, JS the way it was meant to be!
 
+**The Goal**: When we read HTML we should clearly see what the content is about.  When we read CSS we should clearly see what the design looks like.
+
 ## Phase 1: Semantic HTML Development (HTML Developer)
 
 ### 1. Use proper HTML tags to define the meaning of the content on the page and components.
