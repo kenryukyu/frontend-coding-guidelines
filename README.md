@@ -2,9 +2,11 @@
 
 Coding HTML, CSS, JS the way it was meant to be!
 
-Why Universal?  We follow the recommendations of global W3C specification.  
+### Why Universal?  We follow the recommendations of global W3C specification.  
+- HTML is meant for semantics and structure of data
+- CSS is meant for style information
 
-HTML is meant for semantics and structure of data, no style information should be included.  CSS is meant for style information.
+It is long known that separating code into layers create flexible, maintainable code.  HTML and CSS were originally developed to isolate content layer from style layer.
 
 **The Goal**: When we read HTML we should quickly and clearly see what the content is about.  When we read CSS we should quickly and clearly see what the design looks like.
 
@@ -253,3 +255,6 @@ article {
 
 1. After reviewing the code, see what can be re-used (HTML Developer & CSS Developer)
 2. For re-usable styles, define semantic class names and refactor CSS. The class names should be semantic in meaning. (HTML Developer & CSS Developer)
+
+# References
+- https://www.w3.org/QA/Tips/goodclassnames
