@@ -57,7 +57,16 @@ Coding HTML, CSS, JS the way it was meant to be!
 - Last resort: <span>
 ```
 
-### 2. Add id’s, do not add classes yet to add more detailed meaning to the content
+### 2. Add descriptive id's to unique sections within the HTML.
+Id's help people reading your code understand the data better.  It also adds unique selectors for CSS override.
+
+Id's should follow underscore syntax naming convention to distinguish from classes which use dash syntax.
+
+For example:
+```html
+<section id="top_reviews" class="reviews">
+</section>
+```
 
 ### 3. Create generic CSS skeleton similar to HTML
 
