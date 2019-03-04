@@ -64,7 +64,9 @@ Id's should follow underscore syntax naming convention to distinguish from class
 
 For example:
 ```html
-<section id="top_reviews" class="reviews">
+<section id="top_reviews" class="review-section">
+</section>
+<section id="all_reviews" class="review-section">
 </section>
 ```
 
