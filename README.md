@@ -16,6 +16,7 @@ It is long known that separating code into layers create flexible, maintainable 
 ### The Goal 
 - When we read **HTML** we should **quickly and clearly** see what the **content** is about
 - When we read **CSS** we should **quickly and clearly** see what the **design visually looks** like.
+- We should not mix!  Because everyone mixes differently.  Just keep it separate!
 
 **For Example: Readable HTML**
 Here we can quickly understand the meaning and orgination of the data.
