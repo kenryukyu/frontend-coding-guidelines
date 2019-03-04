@@ -2,8 +2,53 @@
 
 Coding HTML, CSS, JS the way it was meant to be!
 
-**The Goal**: When we read HTML we should clearly see what the content is about.  When we read CSS we should clearly see what the design looks like.
+**The Goal**: When we read HTML we should quickly and clearly see what the content is about.  When we read CSS we should quickly and clearly see what the design looks like.
 
+**For Example: Readable HTML**
+Here we can quickly understand the meaning and orgination of the data.
+
+```html
+<article>
+  <header>
+    <h3>My Article 1</h3>
+    <time>1/2/2019</time>
+  </header>
+  <p id="basic_information">
+    This is my article it is great.
+  </p>
+  <p id="very_important_information">
+    This is another paragraph. It is important.
+  </p>
+</article>
+```
+
+**For Example: Readable CSS**
+Here we can quickly understand the visual look of the design.
+
+```scss
+article {
+  @include white-card();
+  header {
+    h3 {
+      @include big-blue-title();
+    }
+    time {
+      @include small-grey-text();
+    }
+  }
+
+  p {
+    @include basic-black-text(12);
+
+    &#very_imporant_data {
+      font-weight: bold;
+      color: red;
+    }
+  }
+}
+```
+
+# Design Guideline Steps
 ## Phase 1: Semantic HTML Development (HTML Developer)
 
 ### 1. Use proper HTML tags to define the meaning of the content on the page and components.
