@@ -7,12 +7,15 @@ Coding HTML, CSS, JS the way it was meant to be!
   - Semantic HTML is a universal "rule"
   - A title will ALWAYS be **h1, h2, h3, ...**, it is never a **div** or a **span**
   - A paragraph of content should be inside **p**, it is never a **span**
-  - Groups of related content should be placed in **section**
+  - Groups of related content should be placed in **section**, etc.....
+  - etc, etc....
 - CSS is meant for style information
 
 It is long known that separating code into layers create flexible, maintainable code.  HTML and CSS were originally developed to isolate content layer from style layer.
 
-**The Goal**: When we read HTML we should quickly and clearly see what the content is about.  When we read CSS we should quickly and clearly see what the design looks like.
+### The Goal 
+- When we read **HTML** we should **quickly and clearly** see what the **content** is about
+- When we read **CSS** we should **quickly and clearly** see what the **design visually looks** like.
 
 **For Example: Readable HTML**
 Here we can quickly understand the meaning and orgination of the data.
