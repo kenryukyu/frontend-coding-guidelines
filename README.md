@@ -8,7 +8,7 @@ Coding HTML, CSS, JS the way it was meant to be!
   - A title will ALWAYS be **h1, h2, h3, ...**, it is never a **div** or a **span**
   - A paragraph of content should be inside **p**, it is never a **span**
   - Groups of related content should be placed in **section**, etc.....
-  - etc, etc....
+  - Learn all HTML tags!!!  It's a universal rule!!!
 - CSS is meant for style information
 
 It is long known that separating code into layers create flexible, maintainable code.  HTML and CSS were originally developed to isolate content layer from style layer.
