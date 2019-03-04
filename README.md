@@ -3,7 +3,11 @@
 Coding HTML, CSS, JS the way it was meant to be!
 
 ### Why Universal?  We follow the recommendations of global W3C specification.  
-- HTML is meant for semantics and structure of data
+- HTML is meant for semantics and structure of data.  Use semantic tags to describe data.
+  - Semantic HTML is a universal "rule"
+  - A title will ALWAYS be **h1, h2, h3, ...**, it is never a **div** or a **span**
+  - A paragraph of content should be inside **p**, it is never a **span**
+  - Groups of related content should be placed in **section**
 - CSS is meant for style information
 
 It is long known that separating code into layers create flexible, maintainable code.  HTML and CSS were originally developed to isolate content layer from style layer.
